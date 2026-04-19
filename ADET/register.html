@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Pepperland Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header class="form-header">
+    <h1>Pepperland Hotel Portal</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="registerForm" action="register.php" method="POST" class="form-card">
+      <h2>Register</h2>
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required>
+
+      <label for="first_name">First Name:</label>
+      <input type="text" id="first_name" name="first_name" required>
+
+      <label>Middle Name:</label>
+      <input type="text" name="middle_name" required>
+
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+
+      <label>Street:</label>
+      <input type="text" name="street" required>
+
+      <label>City:</label>
+      <input type="text" name="city" required>
+
+      <label>Zip Code:</label>
+      <input type="text" name="zip_code" required>
+        
+      <label for="phone_number">Phone Number:</label>
+      <input type="text" id="phone_number" name="phone_number" required>
+
+      <button type="submit">Register</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pepperland Hotel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

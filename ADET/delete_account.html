@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delete Account - Pepperland Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+ <header class="form-header">
+    <h1>Pepperland Hotel Portal</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="deleteForm" action="delete_account.php" method="POST" class="form-card">
+      <h2>Delete Account</h2>
+       <p style="color: red; text-align:center;">Warning: This action cannot be undone.</p>
+      <label for="user_id">User ID:</label>
+      <input type="text" id="user_id" name="user_id" required>
+
+      <button type="submit">Delete Permanently</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pepperland Hotel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

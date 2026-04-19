@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Update Profile - Pepperland Hotel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <header class="form-header">
+    <h1>Pepperland Hotel Portal</h1>
+  </header>
+
+  <main class="form-container">
+    <form id="updateForm" action="update_profile.php" method="POST" class="form-card">
+      <h2>Update Profile</h2>
+      <label for="user_id">User ID:</label>
+      <input type="text" id="user_id" name="user_id" required>
+
+      <label for="street">Street:</label>
+      <input type="text" id="street" name="street">
+
+      <label for="city">City:</label>
+      <input type="text" id="city" name="city">
+
+      <label for="phone_number">Phone Number:</label>
+      <input type="text" id="phone_number" name="phone_number">
+
+      <button type="submit">Update</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Pepperland Hotel. All rights reserved.</p>
+  </footer>
+</body>
+</html>
