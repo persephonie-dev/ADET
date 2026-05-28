@@ -1,0 +1,399 @@
+
+.auth-container {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 2rem;
+}
+.auth-container.register {
+    min-height: 90vh;
+}
+.auth-card {
+    background: var(--white);
+    max-width: 440px;
+    width: 100%;
+    padding: 3.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border-top: 3px solid var(--gold);
+}
+.auth-card.wide {
+    max-width: 600px;
+}
+.auth-title {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-display);
+    font-weight: 300;
+    text-align: center;
+}
+.auth-subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    margin-bottom: 2.5rem;
+}
+.auth-error {
+    display: none;
+    color: var(--danger);
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+.auth-field-group {
+    margin-bottom: 1.25rem;
+}
+.auth-field-group.last {
+    margin-bottom: 2rem;
+}
+.auth-btn {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem;
+    margin-bottom: 1.5rem;
+}
+.auth-footer-text {
+    text-align: center;
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin: 0;
+}
+.auth-footer-text a {
+    color: var(--gold-dark);
+    font-weight: 500;
+}
+.grid-2col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+.grid-address {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+/* Payment Layout Rules */
+.payment-container {
+    max-width: 680px;
+}
+.text-center-block {
+    display: block;
+    text-align: center;
+}
+.payment-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.payment-subtitle {
+    margin-bottom: 3rem;
+    font-size: 0.95rem;
+}
+.payment-loading {
+    font-style: italic;
+}
+.payment-summary-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    border-left: 3px solid var(--gold);
+    margin-bottom: 2rem;
+}
+.payment-summary-title {
+    margin-bottom: 1.5rem;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+}
+.payment-form-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-md);
+    padding: 2.5rem;
+    border: 1px solid var(--cream-dark);
+}
+.payment-error-banner {
+    display: none;
+    color: var(--danger);
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    border-left: 2px solid var(--danger);
+}
+.payment-field-space {
+    margin-bottom: 1.5rem;
+}
+.payment-field-space.large {
+    margin-bottom: 2rem;
+}
+.payment-hint {
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+.payment-btn {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+}
+.payment-error-msg {
+    display: none;
+    color: var(--danger);
+    padding: 2rem 0;
+}
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+.summary-label {
+    width: 120px;
+    display: inline-block;
+}
+.summary-val-highlight {
+    font-weight: 500;
+    color: var(--forest);
+}
+.summary-total-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.25rem;
+    border-top: 1px solid var(--cream-dark);
+    padding-top: 1.25rem;
+}
+.summary-total-label {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+}
+.summary-total-amount {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--gold-dark);
+}
+
+/* Guest Profile Layout Rules */
+.profile-header-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    border-bottom: 1px solid var(--cream-dark);
+    padding-bottom: 2rem;
+}
+.profile-title {
+    font-size: 2.5rem;
+    margin-bottom: 0.35rem;
+}
+.profile-subtitle {
+    font-size: 0.95rem;
+}
+.table-responsive {
+    overflow-x: auto;
+}
+.profile-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.9rem;
+}
+.profile-table thead tr {
+    border-bottom: 2px solid var(--forest);
+    font-family: var(--font-body);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.08rem;
+    color: var(--muted);
+}
+.profile-table th {
+    padding: 1rem 0.5rem;
+}
+.profile-table tbody tr {
+    border-bottom: 1px solid var(--cream-dark);
+    transition: var(--transition);
+}
+.profile-table td {
+    padding: 1.25rem 0.5rem;
+}
+.booking-id-cell {
+    font-weight: 500;
+}
+.room-type-title {
+    color: var(--forest);
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.room-number-sub {
+    font-size: 0.8rem;
+}
+.total-amount-cell {
+    font-weight: 500;
+    color: var(--gold-dark);
+}
+.status-badge {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+.actions-flex {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.action-btn-sm {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+}
+.action-btn-void {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.7rem;
+    color: var(--danger);
+    border-color: rgba(192,57,43,0.3);
+}
+.status-paid {
+    font-size: 0.8rem;
+    color: var(--success);
+    font-weight: 500;
+}
+.profile-empty-state {
+    text-align: center;
+    padding: 4rem 0;
+}
+.profile-empty-state p {
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(10,20,12,0.6);
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+.modal-content {
+    background: var(--white);
+    max-width: 520px;
+    width: 100%;
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-lg);
+    border-top: 3px solid var(--gold);
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.modal-header h3 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+}
+.modal-close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--muted);
+}
+.star-rating-container {
+    display: flex;
+    gap: 0.4rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--cream-dark);
+    margin-top: 0.25rem;
+}
+.review-textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--cream-dark);
+    background: var(--cream);
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    outline: none;
+}
+.modal-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+}
+.modal-cancel-btn {
+    color: var(--forest);
+    border-color: var(--forest-mid);
+}
+
+/* Rooms / Search Interface Layout Rules */
+.rooms-header {
+    background: linear-gradient(135deg, var(--forest) 0%, var(--forest-mid) 100%);
+    padding: 5rem 0 4rem;
+    text-align: center;
+}
+.rooms-header h1 {
+    color: var(--white);
+    font-weight: 300;
+}
+.filter-bar {
+    background: var(--white);
+    border-bottom: 1px solid var(--cream-dark);
+    padding: 2rem 0;
+}
+.filter-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) auto;
+    gap: 1.5rem;
+    align-items: end;
+}
+.filter-search-btn {
+    height: 46px;
+}
+.search-meta-text {
+    margin-bottom: 3rem;
+    font-size: 0.95rem;
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+.skeleton-text-sm {
+    height: 1rem;
+    width: 40%;
+    margin-bottom: 0.5rem;
+}
+.skeleton-text-md {
+    height: 1.5rem;
+    width: 70%;
+    margin-bottom: 0.5rem;
+}
+.skeleton-text-lg {
+    height: 3rem;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.skeleton-text-btn {
+    height: 2rem;
+    width: 40%;
+}
+.no-rooms-banner {
+    display: none;
+    padding: 4rem 0;
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+}
+.room-card-price-container {
+    margin-top: 1.5rem;
+}
+.room-card-action-btn {
+    display: block;
+    text-align: center;
+    margin-top: 1.5rem;
+    width: 100%;
+}

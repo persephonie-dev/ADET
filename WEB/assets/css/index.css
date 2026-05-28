@@ -1,0 +1,39 @@
+.room-card-img { position: relative; overflow: hidden; }
+
+.slide-btn {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    background: rgba(0,0,0,.45); color: #fff; border: none;
+    font-size: 1.5rem; line-height: 1; padding: .2rem .55rem;
+    border-radius: 4px; cursor: pointer; z-index: 3;
+    opacity: 0; transition: opacity .18s;
+    -webkit-user-select: none; user-select: none;
+}
+.room-card-img:hover .slide-btn { opacity: 1; }
+.slide-btn:hover { background: rgba(0,0,0,.7); }
+.slide-prev { left: .4rem; }
+.slide-next { right: .4rem; }
+
+.slide-dots {
+    position: absolute; bottom: .55rem; left: 50%;
+    transform: translateX(-50%);
+    display: flex; gap: .3rem; z-index: 3;
+}
+.slide-dot {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: rgba(255,255,255,.5);
+    transition: background .15s, transform .15s;
+    cursor: pointer;
+}
+.slide-dot.active { background: #fff; transform: scale(1.25); }
+
+.slide-counter {
+    position: absolute; top: .5rem; right: .5rem;
+    background: rgba(0,0,0,.5); color: #fff;
+    font-size: .68rem; border-radius: 3px;
+    padding: .15rem .4rem; z-index: 3; pointer-events: none;
+}
+
+.card-slide-img {
+    width: 100%; height: 100%; object-fit: cover;
+    transition: opacity .14s; display: block;
+}
